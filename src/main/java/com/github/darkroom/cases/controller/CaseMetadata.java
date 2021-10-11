@@ -1,4 +1,4 @@
-package com.github.darkroom.cases;
+package com.github.darkroom.cases.controller;
 
 import java.util.Map;
 

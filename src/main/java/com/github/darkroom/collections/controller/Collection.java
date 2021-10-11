@@ -1,4 +1,4 @@
-package com.github.darkroom.collections;
+package com.github.darkroom.collections.controller;
 
 /**
  * Collection representation for returning to api clients

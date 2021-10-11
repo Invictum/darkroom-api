@@ -1,6 +1,6 @@
-package com.github.darkroom.database;
+package com.github.darkroom.cases.repository;
 
-import com.github.darkroom.database.ClassifierEntity;
+import com.github.darkroom.classifiers.repository.ClassifierEntity;
 
 import javax.persistence.*;
 

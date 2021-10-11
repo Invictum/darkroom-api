@@ -1,4 +1,4 @@
-package com.github.darkroom.database;
+package com.github.darkroom.collections.repository;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;

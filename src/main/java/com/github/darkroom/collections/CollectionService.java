@@ -1,6 +1,7 @@
 package com.github.darkroom.collections;
 
-import com.github.darkroom.database.CollectionRepository;
+import com.github.darkroom.collections.controller.Collection;
+import com.github.darkroom.collections.repository.CollectionRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.convert.ConversionService;
 import org.springframework.stereotype.Service;

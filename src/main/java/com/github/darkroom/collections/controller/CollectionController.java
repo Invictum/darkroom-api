@@ -1,5 +1,6 @@
-package com.github.darkroom.collections;
+package com.github.darkroom.collections.controller;
 
+import com.github.darkroom.collections.CollectionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;

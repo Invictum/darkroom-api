@@ -1,4 +1,4 @@
-package com.github.darkroom.database;
+package com.github.darkroom.collections.repository;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
