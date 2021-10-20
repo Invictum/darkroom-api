@@ -9,10 +9,10 @@ import io.minio.errors.MinioException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
-import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.PostConstruct;
 import java.io.IOException;
+import java.io.InputStream;
 import java.security.GeneralSecurityException;
 
 @Component
@@ -43,13 +43,13 @@ public class ImageRepository {
     /**
      * Saves particular file in the storage
      */
-    public void save(String path, MultipartFile file) {
+    public void save(String path, String contentType, InputStream inputStream) {
         try {
             var arguments = PutObjectArgs.builder()
                     .bucket(bucket)
                     .object(path)
-                    .contentType(file.getContentType())
-                    .stream(file.getInputStream(), file.getInputStream().available(), -1)
+                    .contentType(contentType)
+                    .stream(inputStream, inputStream.available(), -1)
                     .build();
             minioClient.putObject(arguments);
         } catch (MinioException | GeneralSecurityException | IOException e) {
